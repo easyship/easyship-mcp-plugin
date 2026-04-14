@@ -1,0 +1,8 @@
+{
+  "name": "easyship",
+  "description": "Easyship shipping tools — get rates, create shipments, buy labels, track packages, and manage pickups across 550+ couriers worldwide",
+  "version": "1.0.0",
+  "author": { "name": "Easyship" },
+  "license": "MIT",
+  "keywords": ["easyship", "mcp", "shipping", "tracking", "rates", "labels", "logistics", "courier", "ecommerce", "fulfillment"]
+}
