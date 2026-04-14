@@ -1,0 +1,11 @@
+{
+  "name": "easyship",
+  "description": "Easyship shipping tools for Cursor — get rates, create shipments, buy labels, track packages, and manage pickups across 550+ couriers worldwide",
+  "version": "1.0.0",
+  "author": { "name": "Easyship" },
+  "logo": "../assets/easyship_logo.png",
+  "homepage": "https://developers.easyship.com",
+  "repository": "https://github.com/easyship/easyship-mcp-plugins",
+  "license": "MIT",
+  "keywords": ["easyship", "mcp", "shipping", "tracking", "rates", "labels", "logistics", "courier", "ecommerce", "fulfillment"]
+}

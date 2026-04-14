@@ -1,0 +1,28 @@
+{
+  "name": "easyship",
+  "version": "1.0.0",
+  "description": "Easyship shipping tools for OpenAI Codex — get rates, create shipments, buy labels, track packages, and manage pickups across 550+ couriers worldwide",
+  "author": { "name": "Easyship" },
+  "homepage": "https://developers.easyship.com",
+  "repository": "https://github.com/easyship/easyship-mcp-plugins",
+  "license": "MIT",
+  "keywords": ["easyship", "mcp", "shipping", "tracking", "rates", "labels", "logistics"],
+  "interface": {
+    "displayName": "Easyship",
+    "shortDescription": "Compare shipping rates, create shipments, buy labels, and track packages across 550+ couriers.",
+    "longDescription": "Access Easyship's global shipping platform from your editor. Compare rates from 550+ couriers, create shipments with auto-selected or specific couriers, buy and download labels, track packages in real time, schedule pickups, validate addresses, and view shipping analytics — all without leaving your workflow.",
+    "developerName": "Easyship",
+    "category": "Productivity",
+    "capabilities": ["Read"],
+    "logo": "./assets/easyship_logo.png",
+    "composerIcon": "./assets/easyship_logo.png",
+    "brandColor": "#00C9A7",
+    "websiteURL": "https://www.easyship.com",
+    "defaultPrompt": [
+      "What are the shipping options for a 1.5kg package from Hong Kong to New York?",
+      "Track shipment ESSG10006001",
+      "Create a shipment from San Francisco to London",
+      "What are my top shipping destinations this quarter?"
+    ]
+  }
+}
