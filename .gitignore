@@ -1,7 +1,22 @@
-# macOS
-.DS_Store
+node_modules/
 
-# Environment and secrets
+# Secrets and credentials
 .env
 .env.*
 !.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.idea/
+.vscode/
+.claude/
+*.swp
+*.swo
+*~
