@@ -1,0 +1,31 @@
+---
+description: Safety rules for Easyship shipping operations — confirms destructive actions, protects secrets, and validates inputs before API calls
+alwaysApply: true
+---
+
+# Easyship Safety Rules
+
+## Destructive actions require confirmation
+
+Before calling `delete_shipment`, `cancel_shipment`, or `cancel_pickup`, always ask the user to confirm. Show the shipment/pickup ID and current status so they can make an informed decision.
+
+## Never expose API tokens
+
+Never display, log, or include `EASYSHIP_API_ACCESS_TOKEN` in responses, code snippets, or file contents. If the user shares a token in chat, warn them and suggest rotating it.
+
+## Validate required fields before API calls
+
+Before calling `create_shipment`, verify that all required address fields are present: contact name, email, phone, street, city, and country code for both origin and destination. If any are missing, ask the user rather than guessing.
+
+Before calling `get_rates`, ensure origin country, destination country, weight, and all three dimensions (length, width, height) are provided. Prompt for missing values.
+
+## Handle errors gracefully
+
+If an API call returns an error, present the error message clearly and suggest a fix. Common issues:
+- 401 Unauthorized → token is missing or expired, direct to https://app.easyship.com/connect/api
+- 422 Unprocessable → missing or invalid fields, show which fields need correction
+- 429 Rate limited → wait and retry, inform the user
+
+## Currency and units
+
+Always include the currency code when displaying prices. Do not convert currencies unless the user asks. Weights are in kg and dimensions in cm unless the user specifies otherwise.

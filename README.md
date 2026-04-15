@@ -7,7 +7,7 @@ The plugin gives your agent access to Easyship's shipping rates, shipment creati
 
 ## Install
 
-* **For Cursor**: Install from the [Cursor Marketplace](https://cursor.com/marketplace/easyship).
+* **For Cursor**: Install from the [Cursor Marketplace](https://cursor.com/marketplace/easyship), or add via **Settings → Plugins → Search** for "easyship".
 
 * **For Claude Code**: Run these two commands in a chat:
     ```
@@ -17,7 +17,7 @@ The plugin gives your agent access to Easyship's shipping rates, shipment creati
 
 * **For Gemini CLI**: Run this command in your terminal:
     ```
-    gemini extensions install https://github.com/easyship/easyship-mcp
+    gemini extensions install https://github.com/easyship/easyship-mcp-plugin
     ```
 
 * **For OpenAI Codex**: In the Codex CLI, run `/plugins`, search for **Easyship**, and select **Add to Codex**.
@@ -25,7 +25,7 @@ The plugin gives your agent access to Easyship's shipping rates, shipment creati
 * **For VS Code**: Open the Command Palette (`CMD+SHIFT+P`) and run **Chat: Install Plugin From Source**.
   Then paste:
     ```
-    https://github.com/easyship/easyship-mcp
+    https://github.com/easyship/easyship-mcp-plugin
     ```
 
 ## What you get

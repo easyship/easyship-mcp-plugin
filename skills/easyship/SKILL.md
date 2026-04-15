@@ -1,6 +1,7 @@
 ---
-name: easyship-official
+name: easyship
 description: "Official Easyship Integration. Ship, label, track & pickup across 550+ couriers in 200+ countries. Connects to mcp.easyship.com — no install required"
+compatibility: Claude Code, Claude Desktop, Cursor, VS Code, Gemini CLI, Codex
 homepage: https://github.com/easyship/easyship-mcp
 source: https://github.com/easyship/easyship-mcp
 tools:
@@ -12,6 +13,7 @@ tools:
   - get_shipment
   - delete_shipment
   - cancel_shipment
+  - create_label
   - get_shipment_documents
   - list_pickups
   - get_pickup
@@ -43,7 +45,7 @@ metadata:
         - EASYSHIP_API_ACCESS_TOKEN
 ---
 
-> v0.3.1 — 24 tools across shipping, tracking, pickups, billing, address validation, and analytics.
+> v0.3.1 — 25 tools across shipping, tracking, pickups, billing, address validation, and analytics.
 
 ## Shipping rates
 

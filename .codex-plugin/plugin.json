@@ -4,7 +4,7 @@
   "description": "Easyship shipping tools for OpenAI Codex — get rates, create shipments, buy labels, track packages, and manage pickups across 550+ couriers worldwide",
   "author": { "name": "Easyship" },
   "homepage": "https://developers.easyship.com",
-  "repository": "https://github.com/easyship/easyship-mcp-plugins",
+  "repository": "https://github.com/easyship/easyship-mcp-plugin",
   "license": "MIT",
   "keywords": ["easyship", "mcp", "shipping", "tracking", "rates", "labels", "logistics"],
   "interface": {
