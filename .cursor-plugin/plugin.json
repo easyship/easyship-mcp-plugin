@@ -7,5 +7,13 @@
   "homepage": "https://developers.easyship.com",
   "repository": "https://github.com/easyship/easyship-mcp-plugin",
   "license": "MIT",
-  "keywords": ["easyship", "mcp", "shipping", "tracking", "rates", "labels", "logistics", "courier", "ecommerce", "fulfillment"]
+  "keywords": ["easyship", "mcp", "shipping", "tracking", "rates", "labels", "logistics", "courier", "ecommerce", "fulfillment"],
+  "mcpServers": {
+    "easyship": {
+      "url": "https://mcp.easyship.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${EASYSHIP_API_ACCESS_TOKEN}"
+      }
+    }
+  }
 }
