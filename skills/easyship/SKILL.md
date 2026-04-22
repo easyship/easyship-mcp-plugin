@@ -1,6 +1,6 @@
 ---
 name: easyship
-description: "Official Easyship Integration. Ship, label, track & pickup across 550+ couriers in 200+ countries. Connects to mcp.easyship.com — no install required"
+description: "Easyship Shipping MCP to compare rates, create shipments, buy labels, track packages, and schedule pickups from your agent across 550+ couriers in 200+ countries. Hosted server, no local setup."
 compatibility: Claude Code, Claude Desktop, Cursor, VS Code, Gemini CLI, Codex
 homepage: https://github.com/easyship/easyship-mcp-plugin
 source: https://github.com/easyship/easyship-mcp-plugin

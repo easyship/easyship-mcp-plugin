@@ -1,9 +1,11 @@
 <!-- mcp-name: com.easyship/mcp -->
-# Easyship MCP — AI Agent Plugin
+# Easyship MCP — AI Agent Plugin For Shipping & Logistics Automation
 
-Connect your AI tools to the Easyship shipping platform.
+Connect all your AI tools to Easyship’s global shipping platform and manage your entire shipping operation through natural language.
 
-The plugin gives your agent access to Easyship's shipping rates, shipment creation, label purchasing, package tracking, pickup scheduling, address validation, and analytics across 550+ couriers in 200+ countries. For more info, see the [API docs](https://developers.easyship.com).
+The plugin gives your agent access to shipping rates, shipment creation, label purchasing, package tracking, pickup scheduling, address validation, billing, and analytics. For more info, see the [API docs](https://developers.easyship.com/docs/easyship-mcp-server).
+
+Access 550+ courier services across 200+ countries — including UPS, FedEx, DHL Express, USPS, Canada Post, Australia Post, and Royal Mail — directly from Cursor, Claude, Gemini, Codex, and more.
 
 ## Install
 
@@ -30,7 +32,7 @@ The plugin gives your agent access to Easyship's shipping rates, shipment creati
 
 ## What you get
 
-- **Rate comparison**: Compare 550+ courier options with prices, delivery times, and duty estimates
+- **Rate comparison**: Compare 550+ courier options with discounted rates, estimated delivery times, and tax and duty estimates
 - **Shipment management**: Create, update, track, cancel, and manage shipments end-to-end including label purchase and document retrieval
 - **Pickup scheduling**: Check available slots, schedule courier pickups, and manage existing pickups
 - **Address validation**: Validate shipping addresses for US domestic and international destinations
@@ -43,12 +45,18 @@ If your platform doesn't support plugins, you can install the MCP server directl
 
 Get your API token from [Easyship Dashboard → Connect → API](https://app.easyship.com/connect/api).
 
+⚠️ Security Note: Never share your API token in the chat window. If you accidentally paste it in a prompt, revoke and rotate your API key immediately in the Easyship Dashboard.
+
+Note: There is no separate test environment for MCP actions. Any action that consumes credits (such as generating labels) will incur real charges. We recommend using a test API token with limited scopes for your first run.
+
 Each client below offers two connection methods:
 
 | Method | How it works | Requires Python? |
 |--------|-------------|-----------------|
 | **Remote** | Connects to `mcp.easyship.com` via Streamable HTTP | No |
 | **Local** | Runs the `easyship-mcp` package on your machine via `uvx` | Yes |
+
+
 
 ---
 
