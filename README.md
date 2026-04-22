@@ -22,7 +22,14 @@ Access 550+ courier services across 200+ countries — including UPS, FedEx, DHL
     gemini extensions install https://github.com/easyship/easyship-mcp-plugin
     ```
 
-* **For OpenAI Codex**: In the Codex CLI, run `/plugins`, search for **Easyship**, and select **Add to Codex**.
+* **For OpenAI Codex**: In the Codex CLI,
+    Add to `~/.codex/config.toml`:
+
+    ```toml
+    [mcp_servers.easyship]
+    url = "https://mcp.easyship.com/mcp"
+    http_headers = { "Authorization" = "Bearer YOUR_TOKEN" }
+    ```
 
 * **For VS Code**: Open the Command Palette (`CMD+SHIFT+P`) and run **Chat: Install Plugin From Source**.
   Then paste:
