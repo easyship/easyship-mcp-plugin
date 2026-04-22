@@ -1,6 +1,7 @@
 ---
 name: easyship
-description: "Official Easyship Integration. Ship, label, track & pickup across 550+ couriers in 200+ countries. Connects to mcp.easyship.com — no install required"
+title: Easyship Shipping MCP
+description: "Easyship Shipping MCP to compare rates, create shipments, buy labels, track packages, and schedule pickups from your agent across 550+ couriers in 200+ countries. Hosted server, no local setup."
 compatibility: Claude Code, Claude Desktop, Cursor, VS Code, Gemini CLI, Codex
 homepage: https://github.com/easyship/easyship-mcp-plugin
 source: https://github.com/easyship/easyship-mcp-plugin
@@ -121,7 +122,7 @@ Standard CRUD for managing existing pickups.
 
 Validates both US domestic and international addresses in a single tool. Omit `country_alpha2` or pass "US" for domestic; any other country code routes to international validation.
 
-> Requires an updated contract with Easyship.
+> Requires the Address Validation feature to be enabled on your Easyship account.
 
 ## Billing
 

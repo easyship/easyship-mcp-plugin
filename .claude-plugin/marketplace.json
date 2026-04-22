@@ -4,7 +4,7 @@
     "name": "Easyship"
   },
   "metadata": {
-    "description": "Easyship shipping tools for Claude Code"
+    "description": "Easyship Shipping MCP For Claude: Shipping Rates, Labels & Tracking"
   },
   "plugins": [
     {
@@ -15,7 +15,7 @@
       "author": { "name": "Easyship" },
       "license": "MIT",
       "homepage": "https://github.com/easyship/easyship-mcp-plugin",
-      "keywords": ["easyship", "mcp", "shipping", "tracking", "rates", "labels", "logistics", "courier", "ecommerce", "fulfillment"]
+      "keywords": ["easyship", "mcp", "shipping", "carriers", "couriers", "rates", "labels", "tracking", "logistics", "fulfillment"]
     }
   ]
 }

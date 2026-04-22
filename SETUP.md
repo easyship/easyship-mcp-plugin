@@ -2,6 +2,8 @@
 
 This plugin connects to the Easyship MCP server and requires an API access token.
 
+⚠️ Security Note: Never share your API token in the chat window. If you accidentally paste it in a prompt, revoke and rotate your API key immediately in the Easyship Dashboard.
+
 ## Get your API token
 
 1. Log in to the [Easyship Dashboard](https://app.easyship.com)
@@ -28,6 +30,8 @@ After setting your token, try one of these prompts to confirm everything works:
 
 If you see rate results or tracking data, the plugin is connected successfully.
 
+For more info, see the [API docs](https://developers.easyship.com/docs/easyship-mcp-server).
+
 ## Troubleshooting
 
 | Problem | Solution |
@@ -39,5 +43,6 @@ If you see rate results or tracking data, the plugin is connected successfully.
 ## Need help?
 
 - [Easyship API Docs](https://developers.easyship.com)
+- [Easyship MCP Docs](https://developers.easyship.com/docs/easyship-mcp-server)
 - [Easyship Support](https://www.easyship.com/contact)
 - [GitHub Issues](https://github.com/easyship/easyship-mcp-plugin/issues)

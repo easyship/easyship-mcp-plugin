@@ -1,18 +1,20 @@
 <!-- mcp-name: com.easyship/mcp -->
-# Easyship MCP — AI Agent Plugin
+# Easyship MCP — AI Agent Plugin For Shipping & Logistics Automation
 
-Connect your AI tools to the Easyship shipping platform.
+Connect all your AI tools to Easyship’s global shipping platform and manage your entire shipping operation through natural language.
 
-The plugin gives your agent access to Easyship's shipping rates, shipment creation, label purchasing, package tracking, pickup scheduling, address validation, and analytics across 550+ couriers in 200+ countries. For more info, see the [API docs](https://developers.easyship.com).
+The plugin gives your agent access to shipping rates, shipment creation, label purchasing, package tracking, pickup scheduling, address validation, billing, and analytics. For more info, see the [API docs](https://developers.easyship.com/docs/easyship-mcp-server).
+
+Access 550+ courier services across 200+ countries — including UPS, FedEx, DHL Express, USPS, Canada Post, Australia Post, and Royal Mail — directly from Cursor, Claude, Gemini, Codex, and more.
 
 ## Install
 
-* **For Cursor**: Install from the [Cursor Marketplace](https://cursor.com/marketplace/easyship), or add via **Settings → Plugins → Search** for "easyship".
+* **For Cursor**: Search for "easyship" in **Settings -> Marketplace**, or add manually via **Settings -> Tools & MCP**."
 
 * **For Claude Code**: Run these two commands in a chat:
     ```
-    /plugin marketplace add easyship/easyship-mcp
-    /plugin install easyship@easyship-mcp
+    /plugin marketplace add easyship/easyship-mcp-plugin
+    /plugin install easyship@easyship-mcp-plugin
     ```
 
 * **For Gemini CLI**: Run this command in your terminal:
@@ -20,7 +22,14 @@ The plugin gives your agent access to Easyship's shipping rates, shipment creati
     gemini extensions install https://github.com/easyship/easyship-mcp-plugin
     ```
 
-* **For OpenAI Codex**: In the Codex CLI, run `/plugins`, search for **Easyship**, and select **Add to Codex**.
+* **For OpenAI Codex**: In the Codex CLI,
+    Add to `~/.codex/config.toml`:
+
+    ```toml
+    [mcp_servers.easyship]
+    url = "https://mcp.easyship.com/mcp"
+    http_headers = { "Authorization" = "Bearer YOUR_TOKEN" }
+    ```
 
 * **For VS Code**: Open the Command Palette (`CMD+SHIFT+P`) and run **Chat: Install Plugin From Source**.
   Then paste:
@@ -30,7 +39,7 @@ The plugin gives your agent access to Easyship's shipping rates, shipment creati
 
 ## What you get
 
-- **Rate comparison**: Compare 550+ courier options with prices, delivery times, and duty estimates
+- **Rate comparison**: Compare 550+ courier options with discounted rates, estimated delivery times, and tax and duty estimates
 - **Shipment management**: Create, update, track, cancel, and manage shipments end-to-end including label purchase and document retrieval
 - **Pickup scheduling**: Check available slots, schedule courier pickups, and manage existing pickups
 - **Address validation**: Validate shipping addresses for US domestic and international destinations
@@ -43,12 +52,20 @@ If your platform doesn't support plugins, you can install the MCP server directl
 
 Get your API token from [Easyship Dashboard → Connect → API](https://app.easyship.com/connect/api).
 
+> **Tip:** Copy `.env.example` to `.env` and add your API token. Some local setups will read from this file automatically.
+
+⚠️ Security Note: Never share your API token in the chat window. If you accidentally paste it in a prompt, revoke and rotate your API key immediately in the Easyship Dashboard.
+
+Note: There is no separate test environment for MCP actions. Any action that consumes credits (such as generating labels) will incur real charges. We recommend using a test API token with limited scopes for your first run.
+
 Each client below offers two connection methods:
 
 | Method | How it works | Requires Python? |
 |--------|-------------|-----------------|
 | **Remote** | Connects to `mcp.easyship.com` via Streamable HTTP | No |
 | **Local** | Runs the `easyship-mcp` package on your machine via `uvx` | Yes |
+
+
 
 ---
 
@@ -69,7 +86,6 @@ Merge into the top-level `mcpServers` object (create it if missing).
 {
   "mcpServers": {
     "easyship": {
-      "type": "url",
       "url": "https://mcp.easyship.com/mcp",
       "headers": {
         "Authorization": "Bearer YOUR_TOKEN"
@@ -245,6 +261,13 @@ For stdio-based clients, run `uvx easyship-mcp` with `EASYSHIP_API_ACCESS_TOKEN`
 > "What are my top shipping destinations this quarter?"
 
 > "Which courier do I use the most?"
+
+## Need help?
+
+- [Easyship API Docs](https://developers.easyship.com)
+- [Easyship MCP Docs](https://developers.easyship.com/docs/easyship-mcp-server)
+- [Easyship Support](https://www.easyship.com/contact)
+- [GitHub Issues](https://github.com/easyship/easyship-mcp-plugin/issues)
 
 ## API version
 

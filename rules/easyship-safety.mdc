@@ -1,4 +1,5 @@
 ---
+title: Easyship Integration
 description: Safety rules for Easyship shipping operations — confirms destructive actions, protects secrets, and validates inputs before API calls
 alwaysApply: true
 ---
