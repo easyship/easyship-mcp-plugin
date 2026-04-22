@@ -1,4 +1,4 @@
-# Contributing to Easyship AI Toolkit
+# Contributing to Easyship AI Plugins & Skills
 
 Thank you for your interest in contributing! This repo contains agent plugins for the Easyship MCP server.
 

@@ -1,6 +1,7 @@
 {
   "name": "easyship",
-  "description": "Connect Easyship shipping MCP to Claude to compare rates, create shipments, buy labels,validate addresses, schedule pickups, and track packages across 550+ couriers in 200+ countries through natural conversation.",
+  "displayName": "Easyship - Shipping MCP",
+  "description": "Connect Easyship shipping MCP to compare rates, create shipments, buy labels, validate addresses, schedule pickups, and track packages across 550+ couriers in 200+ countries through natural conversation.",
   "version": "1.0.0",
   "author": { "name": "Easyship" },
   "homepage": "https://developers.easyship.com",

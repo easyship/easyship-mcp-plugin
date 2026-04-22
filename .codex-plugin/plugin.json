@@ -1,7 +1,7 @@
 {
   "name": "easyship",
   "version": "1.0.0",
-  "description": "Easyship Plugin for Codex  Shipping Rates, Labels & Tracking",
+  "description": "Easyship Shipping Plugin For Codex: Shipping Rates, Labels & Tracking",
   "author": { "name": "Easyship" },
   "homepage": "https://developers.easyship.com",
   "repository": "https://github.com/easyship/easyship-mcp-plugin",
@@ -14,8 +14,8 @@
     "developerName": "Easyship",
     "category": "Productivity",
     "capabilities": ["Read"],
-    "logo": "./assets/easyship_logo.png",
-    "composerIcon": "./assets/easyship_logo.png",
+    "logo": "./assets/logo.png",
+    "composerIcon": "./assets/logo.png",
     "brandColor": "#00C9A7",
     "websiteURL": "https://www.easyship.com",
     "defaultPrompt": [

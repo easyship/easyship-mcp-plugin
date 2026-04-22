@@ -9,12 +9,12 @@ Access 550+ courier services across 200+ countries — including UPS, FedEx, DHL
 
 ## Install
 
-* **For Cursor**: Install from the [Cursor Marketplace](https://cursor.com/marketplace/easyship), or add via **Settings → Plugins → Search** for "easyship".
+* **For Cursor**: Search for "easyship" in **Settings -> Marketplace**, or add manually via **Settings -> Tools & MCP**."
 
 * **For Claude Code**: Run these two commands in a chat:
     ```
-    /plugin marketplace add easyship/easyship-mcp
-    /plugin install easyship@easyship-mcp
+    /plugin marketplace add easyship/easyship-mcp-plugin
+    /plugin install easyship@easyship-mcp-plugin
     ```
 
 * **For Gemini CLI**: Run this command in your terminal:
@@ -44,6 +44,8 @@ Access 550+ courier services across 200+ countries — including UPS, FedEx, DHL
 If your platform doesn't support plugins, you can install the MCP server directly.
 
 Get your API token from [Easyship Dashboard → Connect → API](https://app.easyship.com/connect/api).
+
+> **Tip:** Copy `.env.example` to `.env` and add your API token. Some local setups will read from this file automatically.
 
 ⚠️ Security Note: Never share your API token in the chat window. If you accidentally paste it in a prompt, revoke and rotate your API key immediately in the Easyship Dashboard.
 
@@ -77,7 +79,6 @@ Merge into the top-level `mcpServers` object (create it if missing).
 {
   "mcpServers": {
     "easyship": {
-      "type": "url",
       "url": "https://mcp.easyship.com/mcp",
       "headers": {
         "Authorization": "Bearer YOUR_TOKEN"
@@ -253,6 +254,13 @@ For stdio-based clients, run `uvx easyship-mcp` with `EASYSHIP_API_ACCESS_TOKEN`
 > "What are my top shipping destinations this quarter?"
 
 > "Which courier do I use the most?"
+
+## Need help?
+
+- [Easyship API Docs](https://developers.easyship.com)
+- [Easyship MCP Docs](https://developers.easyship.com/docs/easyship-mcp-server)
+- [Easyship Support](https://www.easyship.com/contact)
+- [GitHub Issues](https://github.com/easyship/easyship-mcp-plugin/issues)
 
 ## API version
 
