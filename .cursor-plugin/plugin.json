@@ -14,10 +14,7 @@
   "keywords": ["easyship", "mcp", "shipping", "carriers", "couriers", "rates", "labels", "tracking", "logistics", "fulfillment"],
   "mcpServers": {
     "easyship": {
-      "url": "https://mcp.easyship.com/mcp",
-      "headers": {
-        "Authorization": "Bearer ${EASYSHIP_API_ACCESS_TOKEN}"
-      }
+      "url": "https://mcp.easyship.com/mcp"
     }
   }
 }
