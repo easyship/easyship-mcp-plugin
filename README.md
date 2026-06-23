@@ -269,6 +269,17 @@ For stdio-based clients, run `uvx easyship-mcp` with `EASYSHIP_API_ACCESS_TOKEN`
 - [Easyship Support](https://www.easyship.com/contact)
 - [GitHub Issues](https://github.com/easyship/easyship-mcp-plugin/issues)
 
+## Privacy Policy
+
+The Easyship MCP Connector acts as a stateless proxy — it stores no user data, credentials, or shipment information on its own servers. All data processed through this connector is subject to Easyship's data handling practices.
+
+What this connector does with your data:
+- **Data collection:** No personal data or shipment content is collected. Operational request metadata (endpoint, status code, session ID) is logged for monitoring purposes.
+- **Usage & storage:** Access tokens are held by your MCP client (e.g. Claude) and are never written to disk or logged by this server.
+- **Third-party sharing:** Your data is sent to Easyship's API solely to fulfill your requests, governed solely by Easyship's systems.
+- **Retention:** This connector retains no personal data or shipment content. Operational request metadata logs are retained for monitoring purposes. Any retention of shipment or personal data is governed solely by Easyship's systems.
+- **Contact:** For questions about how your data is handled, see the [Easyship Privacy Policy](https://www.easyship.com/legal/privacy-policy) or contact [support@easyship.com](mailto:support@easyship.com).
+
 ## API version
 
 This server targets the Easyship API **v2024-09**.
