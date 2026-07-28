@@ -1,6 +1,8 @@
 <!-- mcp-name: com.easyship/mcp -->
 # Easyship MCP — AI Agent Plugin For Shipping & Logistics Automation
 
+[![MCP Toplist](https://mcptoplist.com/badge/com.easyship%2Fmcp.svg)](https://mcptoplist.com/server/com.easyship%2Fmcp)
+
 Connect all your AI tools to Easyship’s global shipping platform and manage your entire shipping operation through natural language.
 
 The plugin gives your agent access to shipping rates, shipment creation, label purchasing, package tracking, pickup scheduling, address validation, billing, and analytics. For more info, see the [API docs](https://developers.easyship.com/docs/easyship-mcp-server).
